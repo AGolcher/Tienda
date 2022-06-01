@@ -31,3 +31,52 @@ display: como se muestra, o el compartamiento, un bloque de nivel ***
     position: relative;
 }
 
+.navbar{
+    height:15vh;
+    width:100%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    width:160px;
+    cursor:pointer;
+}
+
+nav{
+    flex:1;
+    padding-left: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:0px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: pink;
+    font-size: 22px;
+}
+
+.content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color:orange;
+}
+
+.content p{
+    font-size: 20px;
+    color:darkcyan;
+}
+
+.feature-png{
+    height: 80%;
+    position: absolute;
+    bottom: 50px;
+    right: 160px;
+}
