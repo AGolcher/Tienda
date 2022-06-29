@@ -12,15 +12,16 @@ import org.springframework.stereotype.Service;
 
 /**
  *
- * @author Golcher
+ * @author josea
  */
-public class PaisService {
+@Service
+public class PaisService implements IPaisService {
 
     @Autowired
     private PaisRepository paisRepository;
 
+    @Override
     public List<Pais> listCountry() {
         return (List<Pais>) paisRepository.findAll();
     }
- 
 }

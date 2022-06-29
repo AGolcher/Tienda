@@ -9,14 +9,9 @@ import java.util.List;
 
 /**
  *
- * @author Golcher
+ * @author josea
  */
 public interface IPaisService {
 
-    
     public List<Pais> listCountry();
-    public Pais getPaisById(long id);
-    public void savePais(Pais pais);
-    public void delete(long id);
-
 }
