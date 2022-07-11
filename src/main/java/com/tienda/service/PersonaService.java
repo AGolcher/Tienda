@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 
 /**
  *
- * @author josea
+ * @author Golcher
  */
 @Service
 public class PersonaService implements IPersonaService {
