@@ -17,13 +17,14 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 /**
  *
  * @author Golcher
- 
+*/
+
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
     @Bean
-    public SessionLocalResolver localResolver() {
-        var slr = new SessionLocalResolver();
+    public SessionLocaleResolver localeResolver() {
+        var slr = new SessionLocaleResolver();
         slr.setDefaultLocale(new Locale("es"));
         return slr;
     }
@@ -48,4 +49,3 @@ public class WebConfig implements WebMvcConfigurer {
     }
 
 }
-*/

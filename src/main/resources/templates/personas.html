@@ -14,8 +14,10 @@
     <body> 
         <header th:replace="plantilla/template::header"></header>
 
-        <h1 th:text="${titulo}"></h1>
-
+        <!--Este simbolo "$" pasa parametros del controller con el model.Atribute-->
+        <h1 th:text="${titulo}"></h1> 
+        
+        <!--Este simbolo "#" sustituye nombre-->
         <h1 th:text="#{cliente.nombre}"></h1> 
         
         <table class="table table-dark table-striped">
