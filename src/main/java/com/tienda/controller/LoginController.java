@@ -4,12 +4,16 @@
  */
 package com.tienda.controller;
 
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.stereotype.Controller;
+
 
 /**
  *
  * @author Golcher
  */
+@Controller
 public class LoginController {
 
     @GetMapping("/login")

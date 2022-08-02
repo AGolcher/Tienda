@@ -9,12 +9,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
 
 /**
  *
  * @author Golcher SI AFECTA EL SPRINGSECURITY LO TOMA EN CUENTA, SIRVE PARA
  * VALIDAD SI USER EXISTE O NO Y SI PUEDE LOGEAR O NO!
  */
+@Service
 public class UserService implements UserDetailsService {
 
     @Autowired
