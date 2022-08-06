@@ -22,7 +22,7 @@ public class Persona implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private String id;
     private String nombre;
     private String apellido1;
     private String apellido2;
@@ -38,11 +38,11 @@ public class Persona implements Serializable {
     @JoinColumn(name = "paises_id")
     private Pais pais;
 
-    public long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -16,10 +16,10 @@
 
         <!--Este simbolo "$" pasa parametros del controller con el model.Atribute-->
         <h1 th:text="${titulo}"></h1> 
-        
+
         <!--Este simbolo "#" sustituye nombre-->
         <h1 th:text="#{cliente.nombre}"></h1> 
-        
+
         <table class="table table-dark table-striped">
 
 
@@ -58,6 +58,11 @@
             </th:block>
         </tbody>
     </table>
+
+    <form class="form-inline my-2 my-lg-0" form-method="post" th:action="@{/pdf}">
+        <button sec:authorize="isAnonymous()" th:href="@{~/pdf}" class="btn btn-outline-info my-2 my-sm-0 btn-sm" type="submit">Mirar Reporte</button>
+    </form>
+
     <form class="form-inline my-2 my-lg-0" form-method="post" th:action="@{/logout}">
         <button sec:authorize="isAuthenticated()" class="btn btn-outline-danger my-2 my-sm-0 btn-sm" type="submit">Logout</button>
         <button sec:authorize="isAnonymous()" th:href="@{~/login}" class="btn btn-outline-info my-2 my-sm-0 btn-sm" type="submit">Login</button>

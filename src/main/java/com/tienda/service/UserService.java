@@ -13,8 +13,7 @@ import org.springframework.stereotype.Service;
 
 /**
  *
- * @author Golcher SI AFECTA EL SPRINGSECURITY LO TOMA EN CUENTA, SIRVE PARA
- * VALIDAD SI USER EXISTE O NO Y SI PUEDE LOGEAR O NO!
+ * @author Golcher
  */
 @Service
 public class UserService implements UserDetailsService {
@@ -24,8 +23,8 @@ public class UserService implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        Persona persona = this.personaService.findByNombre(username);                           //retorna toda la linea del buscado 
-        Userprincipal userPrincipal = new Userprincipal(persona);
-        return userPrincipal;
+        Persona persona = this.personaService.findByNombre(username);
+        UserPrincipal userprincipal = new UserPrincipal(persona);
+        return userprincipal;
     }
 }
