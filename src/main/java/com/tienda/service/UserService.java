@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 /**
  *
  * @author Golcher
- 
+ */
 @Service
 public class UserService implements UserDetailsService {
 
@@ -28,4 +28,3 @@ public class UserService implements UserDetailsService {
         return userprincipal;
     }
 }
-*/
